@@ -12,7 +12,7 @@ router.get("/", authenticateUser(), function(req, res) {
   });
 });
 
-// middleware which checks if user is authenticated when visiting a specific route
+//  middleware which checks if user is authenticated when visiting a specific route
 function authenticateUser() {
   return function(req, res, next) {
     if (req.isAuthenticated()) {
